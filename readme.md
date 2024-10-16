@@ -3,12 +3,15 @@ En este ejercicio, compararemos cómo se declaran variables en ambos lenguajes y
 diferencias en cuanto a la inferencia de tipos.
 
 ### Java:
-    public class Main {
-        public static void main(String[] args) {
-            int vida = 100;
-            String personaje = "Naruto";
-            System.out.println("El personaje " + personaje + " tiene " + vida + " puntos de vida.");
-        }
+```java
+public class Main {
+    public static void main(String[] args) {
+        int vida = 100;
+        String personaje = "Naruto";
+        System.out.println("El personaje " + personaje + " tiene " + vida + " puntos de vida.");
+    }
+```
+### Kotlin:
 
 
 Explica las diferencias entre el uso de var y val en Kotlin frente a las variables en Java.
@@ -21,11 +24,13 @@ Explica cómo funciona la estructura if en Kotlin en comparación con el operado
 Java.
 
 ### Kotlin:
-    fun main() {
-        val energia = 80
-        val estado = if (energia > 50) "Personaje fuerte" else "Personaje débil"
-        println(estado)
-    }
+```kotlin
+fun main() {
+    val energia = 80
+    val estado = if (energia > 50) "Personaje fuerte" else "Personaje débil"
+    println(estado)
+}
+```
 
 ## Ejercicio 3: Uso de for y while
 
@@ -36,14 +41,16 @@ Compara el uso del bucle for en ambos lenguajes, haciendo hincapié en cómo Kot
 simplifica la sintaxis.
 
 ### Java:
-    public class Main {
-        public static void main(String[] args) {
-            String[] cofres = {"Espada", "Escudo", "Poción"};
-            for (String cofre : cofres) {
-            System.out.println("Has encontrado: " + cofre);
-            }
+```java
+public class Main {
+    public static void main(String[] args) {
+        String[] cofres = {"Espada", "Escudo", "Poción"};
+        for (String cofre : cofres) {
+        System.out.println("Has encontrado: " + cofre);
         }
     }
+}
+```
 
 ## Ejercicio 4: Control de flujo con break y continue
 
@@ -52,15 +59,17 @@ Java.
 
 Explica la diferencia en cómo Kotlin maneja rangos y control de flujo frente a Java.
 
-## Kotlin:
-    fun main() {
-        for (i in 1..5) {
-            if (i == 3) {
-            continue // Salta la iteración cuando i es 3
-            }
-        println("Número: $i")
+### Kotlin:
+```kotlin
+fun main() {
+    for (i in 1..5) {
+        if (i == 3) {
+        continue // Salta la iteración cuando i es 3
         }
+    println("Número: $i")
     }
+}
+```
 
 ## Ejercicio 5: Definición de una clase en Java y Kotlin
 
@@ -70,23 +79,25 @@ vida y ataque.
 Explica cómo Kotlin simplifica la definición de clases y el constructor frente a Java.
 
 ### Java:
-    public class Personaje {
-        String nombre;
-        int vida;
-        int ataque;
-        public Personaje(String nombre, int vida, int ataque) {
-            this.nombre = nombre;
-            this.vida = vida;
-            this.ataque = ataque;
-        }
-        public void mostrarInfo() {
-            System.out.println("Nombre: " + nombre + ", Vida: " + vida + ", Ataque: " + ataque);
-        }
-        public static void main(String[] args) {
-            Personaje goku = new Personaje("Goku", 100, 50);
-            goku.mostrarInfo();
-        }
+```java
+public class Personaje {
+    String nombre;
+    int vida;
+    int ataque;
+    public Personaje(String nombre, int vida, int ataque) {
+        this.nombre = nombre;
+        this.vida = vida;
+        this.ataque = ataque;
     }
+    public void mostrarInfo() {
+        System.out.println("Nombre: " + nombre + ", Vida: " + vida + ", Ataque: " + ataque);
+    }
+    public static void main(String[] args) {
+        Personaje goku = new Personaje("Goku", 100, 50);
+        goku.mostrarInfo();
+    }
+}
+```
 
 ## Ejercicio 6: Manejo de valores nulos en Kotlin
 
@@ -94,15 +105,16 @@ Kotlin tiene un sistema de tipos nulos más seguro que Java. Explica cómo funci
 seguridad de tipos nulos en Kotlin (String?), comparándola con Java.
 
 ### Kotlin:
-    fun main() {
-        var personaje: String? = null
-        if (personaje != null) {
-            println("El personaje es $personaje")
-        } else {
-            println("No hay personaje.")
-            }
-    }
-
+```kotlin
+fun main() {
+    var personaje: String? = null
+    if (personaje != null) {
+        println("El personaje es $personaje")
+    } else {
+        println("No hay personaje.")
+        }
+}
+```
 ## Ejercicio 7: Funciones simples y expresiones lambda
 
 Vamos a explorar cómo Kotlin permite simplificar la sintaxis de las funciones y cómo se usan
@@ -112,50 +124,54 @@ Compara la simplicidad de las funciones y lambdas en Kotlin con Java, destacando
 Kotlin es más conciso.
 
 ### Java:
-    public class Main {
-        public static void main(String[] args) {
-            System.out.println(multiplicar(5));
-            // Lambda en Java (requiere interfaz funcional)
-            Operacion operacion = (a, b) -> a + b;
-            System.out.println(operacion.sumar(3, 4));
-        }
-        public static int multiplicar(int num) {
-            return num * 2;
-        }
-        interface Operacion {
-            int sumar(int a, int b);
-        }
+```java
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(multiplicar(5));
+        // Lambda en Java (requiere interfaz funcional)
+        Operacion operacion = (a, b) -> a + b;
+        System.out.println(operacion.sumar(3, 4));
     }
+    public static int multiplicar(int num) {
+        return num * 2;
+    }
+    interface Operacion {
+        int sumar(int a, int b);
+    }
+}
+```
 
 ## Ejercicio Final:
 Traduce el siguiente fragmento de código Java a Kotlin, que simula un pequeño combate
 entre dos personajes, donde ambos atacan hasta que uno de los dos quede sin vida.
 
-## Java:
-    public class Combate {
-        public static void main(String[] args) {
-            Personaje goku = new Personaje("Goku", 100, 20);
-            Personaje vegeta = new Personaje("Vegeta", 80, 25);
-            while (goku.vida > 0 && vegeta.vida > 0) {
-                goku.vida -= vegeta.ataque;
-                vegeta.vida -= goku.ataque;
-                System.out.println("Vida de Goku: " + goku.vida);
-                System.out.println("Vida de Vegeta: " + vegeta.vida);
-            }
-            if (goku.vida <= 0) {
-                System.out.println("Vegeta ha ganado el combate.");
-            } else {
-                System.out.println("Goku ha ganado el combate.");
-            }
+### Java:
+```java
+public class Combate {
+    public static void main(String[] args) {
+        Personaje goku = new Personaje("Goku", 100, 20);
+        Personaje vegeta = new Personaje("Vegeta", 80, 25);
+        while (goku.vida > 0 && vegeta.vida > 0) {
+            goku.vida -= vegeta.ataque;
+            vegeta.vida -= goku.ataque;
+            System.out.println("Vida de Goku: " + goku.vida);
+            System.out.println("Vida de Vegeta: " + vegeta.vida);
+        }
+        if (goku.vida <= 0) {
+            System.out.println("Vegeta ha ganado el combate.");
+        } else {
+            System.out.println("Goku ha ganado el combate.");
         }
     }
-    class Personaje {
-        String nombre;
-        int vida;
-        int ataque;
-        public Personaje(String nombre, int vida, int ataque) {
-            this.nombre = nombre;
-            this.vida = vida;
-            this.ataque = ataque;
-        }
+}
+class Personaje {
+    String nombre;
+    int vida;
+    int ataque;
+    public Personaje(String nombre, int vida, int ataque) {
+        this.nombre = nombre;
+        this.vida = vida;
+        this.ataque = ataque;
     }
+}
+```
