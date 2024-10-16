@@ -120,40 +120,42 @@ Kotlin es más conciso.
             System.out.println(operacion.sumar(3, 4));
         }
         public static int multiplicar(int num) {
-return num * 2;
-}
-interface Operacion {
-int sumar(int a, int b);
-}
-}
-Ejercicio Final:
+            return num * 2;
+        }
+        interface Operacion {
+            int sumar(int a, int b);
+        }
+    }
+
+## Ejercicio Final:
 Traduce el siguiente fragmento de código Java a Kotlin, que simula un pequeño combate
 entre dos personajes, donde ambos atacan hasta que uno de los dos quede sin vida.
-Java:
-public class Combate {
-public static void main(String[] args) {
-Personaje goku = new Personaje("Goku", 100, 20);
-Personaje vegeta = new Personaje("Vegeta", 80, 25);
-while (goku.vida > 0 && vegeta.vida > 0) {
-goku.vida -= vegeta.ataque;
-vegeta.vida -= goku.ataque;
-System.out.println("Vida de Goku: " + goku.vida);
-System.out.println("Vida de Vegeta: " + vegeta.vida);
-}
-if (goku.vida <= 0) {
-System.out.println("Vegeta ha ganado el combate.");
-} else {
-System.out.println("Goku ha ganado el combate.");
-}
-}
-}
-class Personaje {
-String nombre;
-int vida;
-int ataque;
-public Personaje(String nombre, int vida, int ataque) {
-this.nombre = nombre;
-this.vida = vida;
-this.ataque = ataque;
-}
-}
+
+## Java:
+    public class Combate {
+        public static void main(String[] args) {
+            Personaje goku = new Personaje("Goku", 100, 20);
+            Personaje vegeta = new Personaje("Vegeta", 80, 25);
+            while (goku.vida > 0 && vegeta.vida > 0) {
+                goku.vida -= vegeta.ataque;
+                vegeta.vida -= goku.ataque;
+                System.out.println("Vida de Goku: " + goku.vida);
+                System.out.println("Vida de Vegeta: " + vegeta.vida);
+            }
+            if (goku.vida <= 0) {
+                System.out.println("Vegeta ha ganado el combate.");
+            } else {
+                System.out.println("Goku ha ganado el combate.");
+            }
+        }
+    }
+    class Personaje {
+        String nombre;
+        int vida;
+        int ataque;
+        public Personaje(String nombre, int vida, int ataque) {
+            this.nombre = nombre;
+            this.vida = vida;
+            this.ataque = ataque;
+        }
+    }
