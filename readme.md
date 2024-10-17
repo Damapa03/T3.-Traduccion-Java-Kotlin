@@ -12,8 +12,8 @@ public class Main {
     }
 }
 ```
-### Kotlin:
-https://github.com/Damapa03/T3.-Traduccion-Java-Kotlin/blob/9e381505f05600c9886e1c89985a518fce7fd385/Java/src/Ejercicio2.java?plain=1
+
+### [Con Kotlin](https://github.com/Damapa03/T3.-Traduccion-Java-Kotlin/blob/9e381505f05600c9886e1c89985a518fce7fd385/Java/src/Ejercicio2.java)
 
 Explica las diferencias entre el uso de var y val en Kotlin frente a las variables en Java.
 
@@ -32,7 +32,7 @@ fun main() {
     println(estado)
 }
 ```
-
+### [Con Java](https://github.com/Damapa03/T3.-Traduccion-Java-Kotlin/blob/030afb6a03fbbe9656a59740626712b7df592d78/Java/src/Ejercicio2.java)
 ## Ejercicio 3: Uso de for y while
 
 Vamos a practicar con bucles, que en ambos lenguajes se usan mucho, sobre todo en
@@ -52,6 +52,7 @@ public class Main {
     }
 }
 ```
+### [Con Kotlin](https://github.com/Damapa03/T3.-Traduccion-Java-Kotlin/blob/030afb6a03fbbe9656a59740626712b7df592d78/Kotlin/src/Ejercicio3.kt)
 
 ## Ejercicio 4: Control de flujo con break y continue
 
@@ -71,7 +72,7 @@ fun main() {
     }
 }
 ```
-
+### [Con Java](https://github.com/Damapa03/T3.-Traduccion-Java-Kotlin/blob/030afb6a03fbbe9656a59740626712b7df592d78/Java/src/Ejercicio4.java)
 ## Ejercicio 5: Definición de una clase en Java y Kotlin
 
 Vamos a ver cómo crear una clase simple para un personaje con atributos como nombre,
@@ -99,7 +100,7 @@ public class Personaje {
     }
 }
 ```
-
+### [Con Kotlin](https://github.com/Damapa03/T3.-Traduccion-Java-Kotlin/blob/030afb6a03fbbe9656a59740626712b7df592d78/Kotlin/src/Ejercicio5.kt)
 ## Ejercicio 6: Manejo de valores nulos en Kotlin
 
 Kotlin tiene un sistema de tipos nulos más seguro que Java. Explica cómo funciona la
@@ -116,6 +117,7 @@ fun main() {
         }
 }
 ```
+### [Con Java](https://github.com/Damapa03/T3.-Traduccion-Java-Kotlin/blob/030afb6a03fbbe9656a59740626712b7df592d78/Java/src/Ejercicio6.java)
 ## Ejercicio 7: Funciones simples y expresiones lambda
 
 Vamos a explorar cómo Kotlin permite simplificar la sintaxis de las funciones y cómo se usan
@@ -141,7 +143,7 @@ public class Main {
     }
 }
 ```
-
+### [Con Kotlin](https://github.com/Damapa03/T3.-Traduccion-Java-Kotlin/blob/030afb6a03fbbe9656a59740626712b7df592d78/Kotlin/src/Ejercicio7.kt)
 ## Ejercicio Final:
 Traduce el siguiente fragmento de código Java a Kotlin, que simula un pequeño combate
 entre dos personajes, donde ambos atacan hasta que uno de los dos quede sin vida.
@@ -176,3 +178,4 @@ class Personaje {
     }
 }
 ```
+### [Con Kotlin](https://github.com/Damapa03/T3.-Traduccion-Java-Kotlin/blob/030afb6a03fbbe9656a59740626712b7df592d78/Kotlin/src/EjercicioFinal.kt)
