@@ -13,7 +13,8 @@ public class Main {
 }
 ```
 ### Kotlin:
-https://github.com/Damapa03/T3.-Traduccion-Java-Kotlin/blob/9e381505f05600c9886e1c89985a518fce7fd385/Java/src/Ejercicio2.java?plain=1
+[Hola](https://github.com/Damapa03/T3.-Traduccion-Java-Kotlin/blob/9e381505f05600c9886e1c89985a518fce7fd385/Java/src/Ejercicio2.java)
+
 
 Explica las diferencias entre el uso de var y val en Kotlin frente a las variables en Java.
 
